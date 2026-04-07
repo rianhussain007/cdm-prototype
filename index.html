@@ -8,6 +8,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f4f4f0;color:#1a1a1a;min-height:100vh}
 .page{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+
 /* Header */
 .page-header{background:#fff;border-radius:14px;border:1px solid #e8e8e0;padding:1.5rem 1.75rem;margin-bottom:1.25rem}
 .tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:4px 12px;border-radius:20px;background:#e1f5ee;color:#0f6e56;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:12px}
@@ -15,6 +16,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .page-header h1{font-size:22px;font-weight:700;margin-bottom:6px;letter-spacing:-0.3px}
 .page-header p{font-size:13px;color:#666;line-height:1.65;max-width:680px}
 .byline{font-size:12px;color:#aaa;margin-top:10px;padding-top:10px;border-top:1px solid #f0f0e8}
+
 /* Metrics */
 .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.25rem}
 .metric{background:#fff;border:1px solid #e8e8e0;border-radius:12px;padding:1.25rem 1.25rem 1rem}
@@ -22,6 +24,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .metric-value{font-size:28px;font-weight:700;color:#1a1a1a;letter-spacing:-0.5px}
 .metric-value.good{color:#0f6e56}
 .metric-sub{font-size:11px;color:#bbb;margin-top:4px}
+
 /* Cards */
 .card{background:#fff;border:1px solid #e8e8e0;border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:1.25rem}
 .card-title{font-size:14px;font-weight:700;color:#1a1a1a;margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
@@ -29,6 +32,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .icon-blue{background:#dceefb;color:#185FA5}
 .icon-green{background:#e4f3d4;color:#3B6D11}
 .icon-amber{background:#fef0d4;color:#854F0B}
+
 /* Sliders */
 .slider-group{display:flex;flex-direction:column;gap:14px}
 .slider-item{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px}
@@ -39,6 +43,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .slider-val{font-size:18px;font-weight:700;color:#1D9E75;min-width:52px;text-align:right}
 input[type=range]{width:100%;height:4px;border-radius:4px;outline:none;border:none;accent-color:#1D9E75;cursor:pointer;margin-top:2px}
 .note-box{background:#f8f8f4;border-radius:8px;padding:0.75rem 1rem;margin-top:1rem;font-size:12px;color:#888;line-height:1.65;border-left:3px solid #e0e0d0}
+
 /* Language table */
 .lang-table{width:100%;border-collapse:collapse}
 .lang-table th{font-size:11px;color:#aaa;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;padding:0 8px 10px;text-align:left;border-bottom:1px solid #f0f0e8}
@@ -56,6 +61,7 @@ input[type=range]{width:100%;height:4px;border-radius:4px;outline:none;border:no
 .t1{background:#dceefb;color:#185FA5}
 .t2{background:#e4f3d4;color:#3B6D11}
 .t3{background:#fef0d4;color:#854F0B}
+
 /* Chart */
 .chart-wrap{position:relative;width:100%;height:240px}
 .legend{display:flex;gap:20px;margin-bottom:14px;flex-wrap:wrap}
@@ -63,236 +69,253 @@ input[type=range]{width:100%;height:4px;border-radius:4px;outline:none;border:no
 .legend-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
 .insight-box{border-left:3px solid #1D9E75;padding:0.875rem 1.1rem;background:#f0faf5;border-radius:0 10px 10px 0;margin-top:1.25rem}
 .insight-box p{font-size:12px;color:#444;line-height:1.7}
+
 /* Footer */
 .footer{text-align:center;font-size:11px;color:#ccc;margin-top:1.5rem;padding:1rem 0;border-top:1px solid #ebebeb}
+
 @media(max-width:600px){
-&nbsp;&nbsp;.metrics{grid-template-columns:1fr}
-&nbsp;&nbsp;.metric-value{font-size:22px}
-&nbsp;&nbsp;.page-header h1{font-size:18px}
+  .metrics{grid-template-columns:1fr}
+  .metric-value{font-size:22px}
+  .page-header h1{font-size:18px}
 }
 </style>
 </head>
 <body>
 <div class="page">
-&nbsp;&nbsp;<div class="page-header">
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="tag"><span class="tag-dot"></span>Supplementary Prototype · DCEA 2026</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<h1>Cultural Diversity Multiplier — Interactive Simulator</h1>
-&nbsp;&nbsp;&nbsp;&nbsp;<p>Demonstrates how the DCEA's Cultural Diversity Multiplier corrects structural training-data bias in platform recommendation algorithms. Adjust the tier sliders to see real-time impact on reach equity and CPM earnings across India's language groups.</p>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="byline">Rian Hussain, Shriya U & Pranav R · CMR University · <em>Silenced by the Algorithm</em> · SDGs Youth Public Policy Innovation Challenge 2026</div>
-&nbsp;&nbsp;</div>
-&nbsp;&nbsp;<div class="metrics">
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-label">Tier 3 reach gap · Baseline</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-value" id="baseline-gap">−77%</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-sub">vs. Tier 1 (English / Hindi)</div>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-label">Tier 3 reach gap · With CDM</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-value good" id="cdm-gap">−33%</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-sub">after multiplier correction</div>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-label">Equity improvement</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-value good" id="improvement">+44pp</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="metric-sub">percentage points recovered</div>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;</div>
-&nbsp;&nbsp;<div class="card">
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="card-title"><span class="card-title-icon icon-green">⚙</span>CDM multiplier controls</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-group">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-item">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-left">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-label">Tier 2 multiplier</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-sub">Tamil · Telugu · Bengali — partial platform AI support</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-right"><div class="slider-val" id="t2-val">1.4×</div></div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" min="1.0" max="2.5" step="0.1" value="1.4" id="t2-slider">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-item">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-left">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-label">Tier 3 multiplier</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-sub">Bhojpuri · Gondi · Tulu — minimal platform AI support</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="slider-right"><div class="slider-val" id="t3-val">2.2×</div></div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" min="1.0" max="3.5" step="0.1" value="2.2" id="t3-slider">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="note-box">Multipliers correct for training-data bias — not content quality. Values are set annually by the NDLEA based on Algorithmic Impact Assessment evidence and are designed to shrink toward 1.0× as platform language AI improves for each tier.</div>
-&nbsp;&nbsp;</div>
-&nbsp;&nbsp;<div class="card">
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="card-title"><span class="card-title-icon icon-blue">≡</span>Language-disaggregated reach report — simulated quarterly DCEA disclosure</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<table class="lang-table">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<thead>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th style="width:110px">Language</th>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th>Organic reach score (0–100)</th>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th class="right" style="width:80px">Baseline</th>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th class="right" style="width:80px">With CDM</th>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th class="right" style="width:72px">Tier</th>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</thead>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tbody>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="lang-name">English</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#185FA5"></div></div></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">100</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">100</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td style="text-align:center"><span class="tier-badge t1">Tier 1</span></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="lang-name">Hindi</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><div class="bar-bg"><div class="bar-fill" style="width:88%;background:#185FA5"></div></div></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">88</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">88</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td style="text-align:center"><span class="tier-badge t1">Tier 1</span></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="lang-name">Tamil</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><div class="bar-bg"><div class="bar-fill" style="width:54%;background:#3B6D11" id="bar-ta"></div></div></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">54</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num highlight t2h" id="cdm-ta">76</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td style="text-align:center"><span class="tier-badge t2">Tier 2</span></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="lang-name">Bengali</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><div class="bar-bg"><div class="bar-fill" style="width:49%;background:#3B6D11" id="bar-bn"></div></div></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">49</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num highlight t2h" id="cdm-bn">69</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td style="text-align:center"><span class="tier-badge t2">Tier 2</span></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="lang-name">Bhojpuri</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><div class="bar-bg"><div class="bar-fill" style="width:28%;background:#BA7517" id="bar-bh"></div></div></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">28</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num highlight t3h" id="cdm-bh">62</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td style="text-align:center"><span class="tier-badge t3">Tier 3</span></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="lang-name">Gondi</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><div class="bar-bg"><div class="bar-fill" style="width:18%;background:#BA7517" id="bar-go"></div></div></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num">18</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td class="num highlight t3h" id="cdm-go">40</td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td style="text-align:center"><span class="tier-badge t3">Tier 3</span></td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tbody>
-&nbsp;&nbsp;&nbsp;&nbsp;</table>
-&nbsp;&nbsp;</div>
-&nbsp;&nbsp;<div class="card">
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="card-title"><span class="card-title-icon icon-amber">₹</span>CPM earnings gap — before and after DCEA implementation</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="legend">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="legend-item"><div class="legend-dot" style="background:#B5D4F4"></div>Baseline CPM (₹) — no policy</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div>Projected CPM with DCEA (₹)</div>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="chart-wrap"><canvas id="cpmChart"></canvas></div>
-&nbsp;&nbsp;&nbsp;&nbsp;<div class="insight-box">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>As the CDM narrows the algorithmic reach gap, advertiser market dynamics shift and regional language content becomes commercially viable — reducing the economic coercion that currently pushes creators to abandon their mother tongue. The CDM is self-terminating: multiplier values decrease toward 1.0× as platform language AI improves.</p>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-&nbsp;&nbsp;</div>
-&nbsp;&nbsp;<div class="footer">SDGs Youth Public Policy Innovation Challenge 2026 · Cultural Diversity Multiplier Prototype · Rian Hussain, Shriya U & Pranav R · CMR University</div>
+
+  <div class="page-header">
+    <div class="tag"><span class="tag-dot"></span>Supplementary Prototype · DCEA 2026</div>
+    <h1>Cultural Diversity Multiplier — Interactive Simulator</h1>
+    <p>Demonstrates how the DCEA's Cultural Diversity Multiplier corrects structural training-data bias in platform recommendation algorithms. Adjust the tier sliders to see real-time impact on reach equity and CPM earnings across India's language groups.</p>
+    <div class="byline">Rian Hussain & Pranav R · CMR University · <em>Silenced by the Algorithm</em> · SDGs Youth Public Policy Innovation Challenge 2026</div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Tier 3 reach gap · Baseline</div>
+      <div class="metric-value" id="baseline-gap">−77%</div>
+      <div class="metric-sub">vs. Tier 1 (English / Hindi)</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Tier 3 reach gap · With CDM</div>
+      <div class="metric-value good" id="cdm-gap">−33%</div>
+      <div class="metric-sub">after multiplier correction</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Equity improvement</div>
+      <div class="metric-value good" id="improvement">+44pp</div>
+      <div class="metric-sub">percentage points recovered</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="card-title-icon icon-green">⚙</span>CDM multiplier controls</div>
+    <div class="slider-group">
+      <div>
+        <div class="slider-item">
+          <div class="slider-left">
+            <div class="slider-label">Tier 2 multiplier</div>
+            <div class="slider-sub">Tamil · Telugu · Bengali — partial platform AI support</div>
+          </div>
+          <div class="slider-right"><div class="slider-val" id="t2-val">1.4×</div></div>
+        </div>
+        <input type="range" min="1.0" max="2.5" step="0.1" value="1.4" id="t2-slider">
+      </div>
+      <div>
+        <div class="slider-item">
+          <div class="slider-left">
+            <div class="slider-label">Tier 3 multiplier</div>
+            <div class="slider-sub">Bhojpuri · Gondi · Tulu — minimal platform AI support</div>
+          </div>
+          <div class="slider-right"><div class="slider-val" id="t3-val">2.2×</div></div>
+        </div>
+        <input type="range" min="1.0" max="3.5" step="0.1" value="2.2" id="t3-slider">
+      </div>
+    </div>
+    <div class="note-box">Multipliers correct for training-data bias — not content quality. Values are set annually by the NDLEA based on Algorithmic Impact Assessment evidence and are designed to shrink toward 1.0× as platform language AI improves for each tier.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="card-title-icon icon-blue">≡</span>Language-disaggregated reach report — simulated quarterly DCEA disclosure</div>
+    <table class="lang-table">
+      <thead>
+        <tr>
+          <th style="width:110px">Language</th>
+          <th>Organic reach score (0–100)</th>
+          <th class="right" style="width:80px">Baseline</th>
+          <th class="right" style="width:80px">With CDM</th>
+          <th class="right" style="width:72px">Tier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lang-name">English</td>
+          <td><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#185FA5"></div></div></td>
+          <td class="num">100</td>
+          <td class="num">100</td>
+          <td style="text-align:center"><span class="tier-badge t1">Tier 1</span></td>
+        </tr>
+        <tr>
+          <td class="lang-name">Hindi</td>
+          <td><div class="bar-bg"><div class="bar-fill" style="width:88%;background:#185FA5"></div></div></td>
+          <td class="num">88</td>
+          <td class="num">88</td>
+          <td style="text-align:center"><span class="tier-badge t1">Tier 1</span></td>
+        </tr>
+        <tr>
+          <td class="lang-name">Tamil</td>
+          <td><div class="bar-bg"><div class="bar-fill" style="width:54%;background:#3B6D11" id="bar-ta"></div></div></td>
+          <td class="num">54</td>
+          <td class="num highlight t2h" id="cdm-ta">76</td>
+          <td style="text-align:center"><span class="tier-badge t2">Tier 2</span></td>
+        </tr>
+        <tr>
+          <td class="lang-name">Bengali</td>
+          <td><div class="bar-bg"><div class="bar-fill" style="width:49%;background:#3B6D11" id="bar-bn"></div></div></td>
+          <td class="num">49</td>
+          <td class="num highlight t2h" id="cdm-bn">69</td>
+          <td style="text-align:center"><span class="tier-badge t2">Tier 2</span></td>
+        </tr>
+        <tr>
+          <td class="lang-name">Bhojpuri</td>
+          <td><div class="bar-bg"><div class="bar-fill" style="width:28%;background:#BA7517" id="bar-bh"></div></div></td>
+          <td class="num">28</td>
+          <td class="num highlight t3h" id="cdm-bh">62</td>
+          <td style="text-align:center"><span class="tier-badge t3">Tier 3</span></td>
+        </tr>
+        <tr>
+          <td class="lang-name">Gondi</td>
+          <td><div class="bar-bg"><div class="bar-fill" style="width:18%;background:#BA7517" id="bar-go"></div></div></td>
+          <td class="num">18</td>
+          <td class="num highlight t3h" id="cdm-go">40</td>
+          <td style="text-align:center"><span class="tier-badge t3">Tier 3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="card-title-icon icon-amber">₹</span>CPM earnings gap — before and after DCEA implementation</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#B5D4F4"></div>Baseline CPM (₹) — no policy</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div>Projected CPM with DCEA (₹)</div>
+    </div>
+    <div class="chart-wrap"><canvas id="cpmChart"></canvas></div>
+    <div class="insight-box">
+      <p>As the CDM narrows the algorithmic reach gap, advertiser market dynamics shift and regional language content becomes commercially viable — reducing the economic coercion that currently pushes creators to abandon their mother tongue. The CDM is self-terminating: multiplier values decrease toward 1.0× as platform language AI improves.</p>
+    </div>
+  </div>
+
+  <div class="footer">SDGs Youth Public Policy Innovation Challenge 2026 · Cultural Diversity Multiplier Prototype · Rian Hussain & Pranav R · CMR University</div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 let cpmChart;
+
 function update(){
-&nbsp;&nbsp;const t2 = parseFloat(document.getElementById('t2-slider').value);
-&nbsp;&nbsp;const t3 = parseFloat(document.getElementById('t3-slider').value);
-&nbsp;&nbsp;document.getElementById('t2-val').textContent = t2.toFixed(1)+'×';
-&nbsp;&nbsp;document.getElementById('t3-val').textContent = t3.toFixed(1)+'×';
-&nbsp;&nbsp;const cdm = {
-&nbsp;&nbsp;&nbsp;&nbsp;ta: Math.min(100, Math.round(54*t2)),
-&nbsp;&nbsp;&nbsp;&nbsp;bn: Math.min(100, Math.round(49*t2)),
-&nbsp;&nbsp;&nbsp;&nbsp;bh: Math.min(100, Math.round(28*t3)),
-&nbsp;&nbsp;&nbsp;&nbsp;go: Math.min(100, Math.round(18*t3))
-&nbsp;&nbsp;};
-&nbsp;&nbsp;document.getElementById('bar-ta').style.width = cdm.ta+'%';
-&nbsp;&nbsp;document.getElementById('bar-bn').style.width = cdm.bn+'%';
-&nbsp;&nbsp;document.getElementById('bar-bh').style.width = cdm.bh+'%';
-&nbsp;&nbsp;document.getElementById('bar-go').style.width = cdm.go+'%';
-&nbsp;&nbsp;document.getElementById('cdm-ta').textContent = cdm.ta;
-&nbsp;&nbsp;document.getElementById('cdm-bn').textContent = cdm.bn;
-&nbsp;&nbsp;document.getElementById('cdm-bh').textContent = cdm.bh;
-&nbsp;&nbsp;document.getElementById('cdm-go').textContent = cdm.go;
-&nbsp;&nbsp;const t3avg = Math.round((cdm.bh + cdm.go) / 2);
-&nbsp;&nbsp;const baseGap = Math.round(((100 - Math.round((28+18)/2)) / 100) * 100);
-&nbsp;&nbsp;const cdmGap = Math.round(((100 - t3avg) / 100) * 100);
-&nbsp;&nbsp;const imp = baseGap - cdmGap;
-&nbsp;&nbsp;document.getElementById('baseline-gap').textContent = '−'+baseGap+'%';
-&nbsp;&nbsp;document.getElementById('cdm-gap').textContent = '−'+cdmGap+'%';
-&nbsp;&nbsp;document.getElementById('improvement').textContent = '+'+imp+'pp';
-&nbsp;&nbsp;if(cpmChart){
-&nbsp;&nbsp;&nbsp;&nbsp;cpmChart.data.datasets[1].data = [
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200, 70,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.min(80, Math.round(32*t2)),
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.min(75, Math.round(28*t2)),
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.min(60, Math.round(18*t3)),
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math.min(45, Math.round(12*t3))
-&nbsp;&nbsp;&nbsp;&nbsp;];
-&nbsp;&nbsp;&nbsp;&nbsp;cpmChart.update('none');
-&nbsp;&nbsp;}
+  const t2 = parseFloat(document.getElementById('t2-slider').value);
+  const t3 = parseFloat(document.getElementById('t3-slider').value);
+  document.getElementById('t2-val').textContent = t2.toFixed(1)+'×';
+  document.getElementById('t3-val').textContent = t3.toFixed(1)+'×';
+
+  const cdm = {
+    ta: Math.min(100, Math.round(54*t2)),
+    bn: Math.min(100, Math.round(49*t2)),
+    bh: Math.min(100, Math.round(28*t3)),
+    go: Math.min(100, Math.round(18*t3))
+  };
+
+  document.getElementById('bar-ta').style.width = cdm.ta+'%';
+  document.getElementById('bar-bn').style.width = cdm.bn+'%';
+  document.getElementById('bar-bh').style.width = cdm.bh+'%';
+  document.getElementById('bar-go').style.width = cdm.go+'%';
+  document.getElementById('cdm-ta').textContent = cdm.ta;
+  document.getElementById('cdm-bn').textContent = cdm.bn;
+  document.getElementById('cdm-bh').textContent = cdm.bh;
+  document.getElementById('cdm-go').textContent = cdm.go;
+
+  const t3avg = Math.round((cdm.bh + cdm.go) / 2);
+  const baseGap = Math.round(((100 - Math.round((28+18)/2)) / 100) * 100);
+  const cdmGap = Math.round(((100 - t3avg) / 100) * 100);
+  const imp = baseGap - cdmGap;
+
+  document.getElementById('baseline-gap').textContent = '−'+baseGap+'%';
+  document.getElementById('cdm-gap').textContent = '−'+cdmGap+'%';
+  document.getElementById('improvement').textContent = '+'+imp+'pp';
+
+  if(cpmChart){
+    cpmChart.data.datasets[1].data = [
+      200, 70,
+      Math.min(80, Math.round(32*t2)),
+      Math.min(75, Math.round(28*t2)),
+      Math.min(60, Math.round(18*t3)),
+      Math.min(45, Math.round(12*t3))
+    ];
+    cpmChart.update('none');
+  }
 }
+
 window.addEventListener('load', function(){
-&nbsp;&nbsp;const ctx = document.getElementById('cpmChart').getContext('2d');
-&nbsp;&nbsp;cpmChart = new Chart(ctx, {
-&nbsp;&nbsp;&nbsp;&nbsp;type: 'bar',
-&nbsp;&nbsp;&nbsp;&nbsp;data: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labels: ['English','Hindi','Tamil','Bengali','Bhojpuri','Gondi'],
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;datasets: [
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label: 'Baseline CPM (₹)',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: [200, 70, 35, 28, 18, 10],
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor: '#B5D4F4',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderRadius: 5,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderSkipped: false
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label: 'Projected with DCEA (₹)',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: [200, 70, 45, 39, 40, 26],
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor: '#1D9E75',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderRadius: 5,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderSkipped: false
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-&nbsp;&nbsp;&nbsp;&nbsp;},
-&nbsp;&nbsp;&nbsp;&nbsp;options: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responsive: true,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maintainAspectRatio: false,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;plugins: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;legend: { display: false },
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tooltip: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callbacks: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label: ctx => ' ₹' + ctx.parsed.y
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scales: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid: { display: false },
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ticks: { font: { size: 12 }, color: '#888' }
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid: { color: 'rgba(0,0,0,0.04)' },
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ticks: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font: { size: 11 },
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: '#aaa',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback: v => '₹' + v
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: true,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text: 'CPM in ₹',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font: { size: 11 },
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: '#bbb'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;});
-&nbsp;&nbsp;document.getElementById('t2-slider').addEventListener('input', update);
-&nbsp;&nbsp;document.getElementById('t3-slider').addEventListener('input', update);
-&nbsp;&nbsp;update();
+  const ctx = document.getElementById('cpmChart').getContext('2d');
+  cpmChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['English','Hindi','Tamil','Bengali','Bhojpuri','Gondi'],
+      datasets: [
+        {
+          label: 'Baseline CPM (₹)',
+          data: [200, 70, 35, 28, 18, 10],
+          backgroundColor: '#B5D4F4',
+          borderRadius: 5,
+          borderSkipped: false
+        },
+        {
+          label: 'Projected with DCEA (₹)',
+          data: [200, 70, 45, 39, 40, 26],
+          backgroundColor: '#1D9E75',
+          borderRadius: 5,
+          borderSkipped: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ' ₹' + ctx.parsed.y
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { font: { size: 12 }, color: '#888' }
+        },
+        y: {
+          grid: { color: 'rgba(0,0,0,0.04)' },
+          ticks: {
+            font: { size: 11 },
+            color: '#aaa',
+            callback: v => '₹' + v
+          },
+          title: {
+            display: true,
+            text: 'CPM in ₹',
+            font: { size: 11 },
+            color: '#bbb'
+          }
+        }
+      }
+    }
+  });
+
+  document.getElementById('t2-slider').addEventListener('input', update);
+  document.getElementById('t3-slider').addEventListener('input', update);
+  update();
 });
 </script>
 </body>
